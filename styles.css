@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "courier prime";
+}
+h1 {
+  margin-top: 2rem;
+  width: 60%;
+  margin-left: 42%;
+  color: green;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: rgb(196, 223, 19);
+  margin: 2.5rem auto;
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+input {
+  margin: 2.5rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  margin-left: 1rem;
+  background-color: rgb(238, 253, 140);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+input:active{
+  border: 1px solid rgb(224, 240, 116);
+}
+p {
+  margin: 1rem;
+}
+button {
+  width: 20%;
+  height: 1.8rem;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+  background-color: greenyellow;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border: none;
+}
+button:hover{
+  background-color: rgb(216, 248, 169);
+}
+button:active{
+  background-color: rgb(247, 254, 235); ;
+  box-shadow: none;
+  transform: translateY(0.1rem);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+    margin-left: 20%;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  
+  section {
+    width: 90%;
+    padding: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .input-section{
+    width: 100%;
+  }
+  input{
+    margin: 0;
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  button {
+    width: 40%;
+  }
+}
